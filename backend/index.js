@@ -7,8 +7,15 @@ connectToMongo()
 const app = express()
 const port = 5000
 
-app.use(cors())
+app.use(cors({
+  origin:"https://i-notebook-frontend-nu.vercel.app",
+  credentials:true
+}))
 app.use(express.json())
+
+app.get("/",(req,res)=>{
+  res.send("hello world")
+})
 
 // available routes
 app.use('/api/auth',require('./routes/auth'))

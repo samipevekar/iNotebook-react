@@ -8,7 +8,7 @@ export default function Signup(props) {
 
   const handleSubmit=async(e)=>{
     e.preventDefault()
-    const response = await fetch(`http://localhost:5000/api/auth/createuser`, {
+    const response = await fetch(`https://i-notebook-backend-ten.vercel.app/api/auth/createuser`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -33,9 +33,9 @@ const onChange = (e)=>{
     setCredentials({...credentials, [e.target.name]: e.target.value})
 }
   return (
-    <div className='container my-3'>
-      <h2>Create an account to use iNotebook</h2>
-      <form onSubmit={handleSubmit}>
+    <div className='container my-3' style={{margin:'auto',maxWidth:'400px'}}>
+      <h2>Signup</h2>
+      <form onSubmit={handleSubmit} style={{maxWidth:"400px",margin:"auto"}}>
   <div className="mb-3">
     <label htmlFor="email" className="form-label">Name</label>
     <input type="text" className="form-control" name='name' onChange={onChange} id="name" aria-describedby="emailHelp" required/>

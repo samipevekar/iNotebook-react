@@ -33,9 +33,9 @@ export default function Login(props) {
         setCredentials({...credentials, [e.target.name]: e.target.value})
     }
   return (
-    <div className='my-3'>
-      <h2>Login to continue to iNotebook</h2>
-        <form onSubmit={handleSubmit}>
+    <div className='my-3 ' style={{margin:'auto',maxWidth:'400px'}}>
+      <h2>Login</h2>
+        <form onSubmit={handleSubmit} style={{maxWidth:"400px",margin:"auto"}}>
     <div className="mb-3">
       <label htmlFor="email" className="form-label">Email address</label>
       <input type="email" className="form-control" name='email' id="email" onChange={onChange} value={credentials.email} aria-describedby="emailHelp" required/>

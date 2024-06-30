@@ -1,0 +1,6 @@
+#description::-webkit-scrollbar{
+    width: 0;
+}
+#description{
+    resize: none;
+}
