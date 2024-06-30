@@ -7,7 +7,7 @@ export default function Login(props) {
 
     const handleSubmit=async(e)=>{
         e.preventDefault()
-        const response = await fetch(`http://localhost:5000/api/auth/login`, {
+        const response = await fetch(`https://i-notebook-backend-ten.vercel.app/api/auth/login`, {
             method: 'POST',
             headers: {
               'Content-Type': 'application/json',
