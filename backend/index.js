@@ -8,6 +8,7 @@ const app = express()
 const port = 5000
 
 app.use(cors({
+  methods:["GET","POST","OPTIONS","PUT","DELETE"],
   origin:["https://i-notebook-frontend-nu.vercel.app","http://localhost:3000"],
   credentials:true
 }))
