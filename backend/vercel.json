@@ -9,6 +9,11 @@
         }
       }
     ],
+    "functions": {
+      "index.js": {
+        "maxDuration": 900
+      }
+    },
     "routes": [
       {
         "src": "/(.*)",
@@ -16,3 +21,4 @@
       }
     ]
   }
+  
